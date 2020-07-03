@@ -99,6 +99,7 @@ textarea {
 html {
   background-color: #FF595E;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -106,6 +107,8 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
@@ -114,6 +117,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
+  max-width: 1200px;
 }
 
 #main-info h1 {
@@ -121,11 +126,14 @@ body {
     display: flex;
 }
 
+#main-info {
+    border-bottom: 1px solid;
+    border-color: #fff;
+}
+
 #main-info p {
     align-items: flex-end;
     display: flex;
-    border-bottom: solid;
-    border-color: #dd5f70;
     padding-bottom: 2em;
 }
 .div-1, .div-2, .div-3 {
@@ -140,10 +148,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .div-2 {
-    border-left: solid;
-    border-right:solid;
-    border-color: #dd5f70;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #fff;
 }
 .div-1, .div-2, .div-3 p {
     align-items: center;
@@ -152,8 +161,9 @@ body {
 }
 footer {
     padding-top:2em;
-    border-top: solid;
-    border-color: #dd5f70;
+    border-top: 1px solid;
+    border-color: #fff;
+    width: 100%;
 }
 
 /* ==========================================================================
